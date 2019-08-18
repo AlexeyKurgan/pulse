@@ -1,0 +1,43 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/*-- header and promo section styles --*/
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+/*-- header and promo section styles --*/
+
+/* --------------------------------------- */
+
+/*-- advantages section styles--*/
+@import 'blocks/advantages';
+@import 'blocks/titles';
+/*-- advantages section styles--*/
+
+/*-----------------------------------------*/
+/*--consultation section styles --*/
+@import 'blocks/consultation';
+@import 'blocks/forms';
+/*--consultation section styles --*/
+
+/*-----------------------------------------*/
+
+/*--consultation section styles --*/
+@import 'blocks/carousel';
+/*--consultation section styles --*/
+
+/*-----------------------------------------*/
+
+/*--media styles --*/
+@import 'base/media';
+/*--media styles --*/

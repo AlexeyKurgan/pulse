@@ -1,0 +1,189 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    * {
+        color: blue;
+    }
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    * {
+        color: rgb(0, 255, 21);
+    }
+
+    .title {
+        font-size: 25px;
+
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+
+        &__official {
+            font-size: 15px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        &__phone {
+            font-size: 20px;
+        }
+    }
+
+    .promo {
+        min-height: 620px;
+        padding-bottom: 55px;
+        background-size: 100% 100%;
+
+        &__wrapper {
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        &__link {
+            font-size: 20px;
+        }
+
+    }
+
+    .advantages {
+        padding-top: 45px;
+
+
+
+        &__item-wrapper {
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+        &__item {
+            max-width: 220px;
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    * {
+        color: rgb(255, 0, 179);
+    }
+
+    .header {
+        justify-content: space-around;
+
+        &__official_hidden {
+            display: none;
+        }
+
+
+    }
+
+    .promo {
+        min-height: 600px;
+        padding: 21px 0 60px 0;
+        background-size: 100% 100%;
+
+        &__wrapper {
+            align-items: center;
+            margin-top: 50px;
+
+            .button_main {
+                width: 250px;
+            }
+        }
+
+        &__header {
+            font-size: 28px;
+            line-height: 20px;
+        }
+    }
+
+    .advantages {
+        padding: 30px 0 58px 0;
+
+        &__item-wrapper {
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            max-width: none;
+            width: 100%;
+            padding: 0 50px 0 50px;
+            margin-bottom: 50px;
+
+            &-title {
+                margin-top: 25px;
+                font-size: 25px;
+            }
+
+            &-text {
+                margin-top: 15px;
+                font-size: 17px;
+
+                .br_hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    * {
+        color: rgb(251, 45, 9);
+
+    }
+
+    .promo {
+        &__subheader {
+            font-size: 17px;
+            line-height: 10px
+        }
+
+        &__wrapper {
+            margin-top: 70px;
+        }
+
+        &__icons {
+            justify-content: space-evenly;
+        }
+    }
+
+
+    .header {
+        padding: 0 25px 0 25px;
+
+        &__logo {
+
+            img {
+                width: 80%;
+            }
+        }
+
+
+        &__phone {
+            font-size: 15px;
+        }
+
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+    * {
+        color: rgb(215, 170, 191);
+    }
+}

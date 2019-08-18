@@ -1,0 +1,42 @@
+.advantages {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding: 70px 0 78px 0;
+    color: $main_text_color;
+
+    
+    &__item-wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 247px;
+
+
+        &-title {
+            margin-top: 38px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &-text {
+            margin-top: 29px;
+            font-size: 14px;
+            font-weight: 300;
+
+        }
+
+        &-link {
+            color: #ff0000;
+            text-decoration: underline;
+            &:hover{
+                color: $main_text_color;
+            }
+        }
+    }
+}
