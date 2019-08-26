@@ -1,28 +1,41 @@
 .carousel {
-    padding:81px 0; 
+    padding: 81px 0;
+    position: relative;
+
     &__inner {
-        position: relative;
-        width:750px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         margin: 0 auto;
-        
-    }
 
-    .slick-prev,.slick-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff;
-        img{
-            width: 31px;
-            height: 50px;
+        &__img {
+            display: block;
+            width: 100%;
+            height: auto;
         }
-    }
-    
-    .slick-next{
-        right: -66px;
-        left: auto;
-    }
-}
 
+    }
+
+    .slick-prev,
+    .slick-next {
+        background-color: white;
+        border: none;
+    }
+
+    .slick-prev img,
+    .slick-next img {
+        width: 31px;
+        height: 51px;
+    }
+
+
+    .slick-next {
+        margin-left: 66px;
+    }
+
+    .slick-prev {
+        margin-right: 66px;
+    }
+
+}

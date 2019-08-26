@@ -1,21 +1,12 @@
 /* Large desktops and laptops */
-@media (min-width: 1200px) {}
+// @media (min-width: 1200px) {}
 
 /* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-    * {
-        color: blue;
-    }
-
-
-}
+// @media (min-width: 992px) and (max-width: 1199px) {
+//    }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-    * {
-        color: rgb(0, 255, 21);
-    }
-
     .title {
         font-size: 25px;
 
@@ -68,14 +59,25 @@
             max-width: 220px;
         }
     }
+
+    .consultation {
+        padding: 100px 20px 92px 20px;
+    }
+
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+    }
+
+    .reviews {
+        padding-left: 20px;
+        padding-right: 20px
+    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    * {
-        color: rgb(255, 0, 179);
-    }
-
     .header {
         justify-content: space-around;
 
@@ -137,15 +139,29 @@
         }
     }
 
+    .consultation {
+        padding: 100px 20px 92px 20px;
+    }
+
+    .title_left {
+        font-size: 33px;
+    }
+
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+
+    .reviews {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
 
 }
 
 @media (max-width: 650px) {
-    * {
-        color: rgb(251, 45, 9);
-
-    }
-
     .promo {
         &__subheader {
             font-size: 17px;
@@ -157,6 +173,8 @@
         }
 
         &__icons {
+            margin-top: 55px;
+            width: 530px;
             justify-content: space-evenly;
         }
     }
@@ -178,12 +196,251 @@
         }
 
     }
+
+    .advantages {
+        padding: 30px 0 10px 0;
+    }
+
+    .consultation {
+        min-height: 550px;
+        padding: 50px 15px 54px 15px;
+    }
+
+    .title_left {
+        font-size: 22px;
+    }
+
+    .catalog {
+        padding: 0 15px;
+
+        &__tabs {
+            margin-top: 40px;
+        }
+
+        &__tab {
+            font-size: 15px;
+        }
+
+        &__content {
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        &-item {
+            width: 100%;
+        }
+    }
+
+    .reviews {
+        padding-left: 30px;
+        padding-right: 30px;
+
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px
+        }
+
+        &__icon {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+
+        &__content-wrapper {
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .footer {
+        &__info {
+            top: -10px;
+            width:100%;
+        }
+    }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .button {
+        &_submit {
+            width: 50%;
+            min-height: 50px;
+            margin: 0 auto;
+        }
+    }
 
-    * {
-        color: rgb(215, 170, 191);
+    .promo {
+        padding: 20px 0 25px 0;
+
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__header {
+            font-size: 20px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+            line-height: 13px;
+            margin-top: 13px;
+        }
+
+        &__icons {
+            margin-top: 40px;
+            padding: 0 46px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &__icon {
+            font-size: 12px
+        }
+
+
+
+        .header {
+            flex-direction: column;
+
+            &__logo {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            &__contacts {
+                align-items: center;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .advantages {
+        padding: 16px 0 0px 0;
+        width: 100%;
+    }
+
+    .consultation {
+        background-size: 100% 100%;
+        padding: 55px 0 55px 0;
+        min-height: auto;
+
+        .title {
+
+            &_left {
+                font-size: 20px;
+                padding: 0 10px;
+            }
+        }
+
+        &__desc {
+            padding: 0px 10px;
+            font-size: 15px;
+        }
+
+        .feed-form {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+    .carousel {
+        padding: 45px 0;
+
+        .slick-prev img,
+        .slick-next img {
+            width: 20px;
+            height: 25px;
+        }
+
+        .slick-next {
+            margin-left: 25px;
+        }
+
+        .slick-prev {
+            margin-right: 25px;
+        }
+
+    }
+
+    .catalog {
+        padding-bottom: 30px;
+
+        .title {
+            padding: 0 10px;
+            font-size: 23px;
+        }
+
+        &__tabs {
+            margin-top: 40px;
+        }
+
+        &__tab {
+            font-size: 11px;
+        }
+
+        &-item {
+            width: 100%;
+            padding: 0 12px;
+        }
+    }
+
+    .reviews {
+        .title {
+            font-size: 25px;
+        }
+
+        &__wrapper {
+            margin-top: 50px;
+            align-items: center;
+        }
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        &__icon {
+            margin-right: 0;
+        }
+
+        &__content-wrapper {
+            max-width: 100%;
+            align-items: center;
+            padding: 15px 15px;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 100%;
+            height: 215px;
+            padding: 30px 0px 10px 0px;
+        }
+
+        &__adress {
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+    }
+
+    .modal {
+        width: 100%;
+        min-height: none;
+        padding: 35px 10px 20px 10px;
+
+        &__close {
+            top: 5px;
+            right: 5px;
+            font-size: 35px;
+        }
+
     }
 }

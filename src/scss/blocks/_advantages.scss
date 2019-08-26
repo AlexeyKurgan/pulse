@@ -4,7 +4,7 @@
     padding: 70px 0 78px 0;
     color: $main_text_color;
 
-    
+
     &__item-wrapper {
         margin-top: 65px;
         display: flex;
@@ -34,9 +34,19 @@
         &-link {
             color: #ff0000;
             text-decoration: underline;
-            &:hover{
+
+            &:hover {
                 color: $main_text_color;
             }
         }
+
+        &-animate-icon {
+            animation: heartBeat 2.2s ease infinite;
+        }
+    }
+
+    .title {
+        padding: 0px 10px;
+        font-size: 25px;
     }
 }
